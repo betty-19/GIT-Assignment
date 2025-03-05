@@ -4,6 +4,15 @@
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif; 
 }
+/* body, .wrapper{
+    margin:0;
+    padding: 0;
+} */
+ .wrapper{
+    min-height: 100vh;  /* Ensure the wrapper covers the full viewport */
+    display: flex;
+    flex-direction: column;
+ }
 .bg-image{
     background-image: url("./assets/main.webp");
     /* background-position: center; */
@@ -238,5 +247,42 @@ ul #signup:hover,.texts button:hover{
 .suggestion{
     display: flex;
     justify-content: space-around;
+    margin-bottom: 80px;
+    margin-inline: 10%;
     
+}
+footer{
+    text-align: center;
+    background-color:#4f7261 ;
+    margin-bottom: 0 !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:20px;  padding-top:40px;
+    color:#fff;
+}
+footer .social-media{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:25px;
+  
+}
+footer .social-media button{
+  border:1px solid #b9b5b5a1;
+  width:55px;
+  height: 55px;
+  border-radius: 50%;
+background-color: transparent;
+color:#fff;
+text-align: center;
+}
+
+footer .social-media button i{
+    font-size: 25px;
+}
+footer .social-media p b a{
+    color:#14e07e;
+    text-decoration: none;
+
 }
