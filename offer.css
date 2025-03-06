@@ -1,0 +1,52 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.content{
+    padding-inline:50px;
+    padding-top:50px;
+}
+.wrapper .rock-climbing{
+      /* background-color: black;  */
+}
+.wrapper h1{
+    color:#000;
+
+}
+.wrapper .rock-climbing, .wrapper .canoeing,.wrapper .offroad{
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+    gap:50px;
+    /* padding-top:20px; */  
+    color:rgb(65, 57, 57);
+    font-size:20px;
+   
+}
+
+.wrapper .rock-climbing p:nth-of-type(2), .wrapper .canoeing p:nth-of-type(2),.wrapper .offroad p:nth-of-type(2){
+    font-size:25px;
+}
+.wrapper .rock-climbing p:nth-of-type(4), .wrapper .canoeing p:nth-of-type(4),.wrapper .offroad p:nth-of-type(4){
+ color:#79a690;
+ font-weight: bold;
+}
+.content{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    row-gap: 100px;
+}
+.wrapper .content img{
+    width: 420px;
+    height: 290px;
+  
+}
+.rock-climbing-texts, .canoeing-texts, .offroad-texts{
+    display:flex;
+    /* align-items: center; */
+    flex-direction : column;
+    gap:20px;
+    line-height: 28px;
+    
+}

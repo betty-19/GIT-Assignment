@@ -1,0 +1,35 @@
+footer{
+    text-align: center;
+    background-color:#4f7261 ;
+    margin-bottom: 0 !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:20px;  padding-top:40px;
+    color:#fff;
+}
+footer .social-media{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:25px;
+  
+}
+footer .social-media button{
+  border:1px solid #b9b5b5a1;
+  width:55px;
+  height: 55px;
+  border-radius: 50%;
+background-color: transparent;
+color:#fff;
+text-align: center;
+}
+
+footer .social-media button i{
+    font-size: 25px;
+}
+footer p b a{
+    color:#14e07e;
+    text-decoration: none;
+
+}
