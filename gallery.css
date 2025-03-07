@@ -1,0 +1,36 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: 0;
+}
+.texts{
+    text-align: center;
+    padding:60px 20%;
+}
+.texts h1{
+    color:rgb(43, 42, 42);
+    margin-bottom: 20px;
+}
+.texts p{
+    font-size: 20px;
+    line-height: 25px;
+    color:rgb(77, 75, 75);
+}
+.galleries{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:50px;
+    margin-bottom: 30px;
+}
+.galleries a{
+    text-decoration: none;
+    color: black;
+     font-weight: bold;
+color:#66c999;
+}
+.galleries a:active{
+    color:#000;
+
+}

@@ -2,10 +2,11 @@
     margin:0;
     padding:0;
     box-sizing: border-box;
+    /* font-family: 'Roboto', sans-serif; */
 }
 .content{
-    padding-inline:50px;
-    padding-top:50px;
+    padding:50px 70px;
+
 }
 .wrapper .rock-climbing{
       /* background-color: black;  */
@@ -35,18 +36,31 @@
 .content{
     display: grid;
     grid-template-columns: repeat(1,1fr);
-    row-gap: 100px;
+    row-gap: 60px;
 }
 .wrapper .content img{
     width: 420px;
-    height: 290px;
+    height: 320px;
   
 }
 .rock-climbing-texts, .canoeing-texts, .offroad-texts{
     display:flex;
     /* align-items: center; */
     flex-direction : column;
-    gap:20px;
+    gap:15px;
     line-height: 28px;
+    padding-top:15px;
     
+}
+.rock-climbing-texts button, .canoeing-texts button, .offroad-texts button{
+    padding: 15px 75px;
+    color:#fff;
+    background-color: #79a690;
+    border-radius: 45px;
+    transition:all ease-in-out .4s;
+    border:none;
+    font-size:18px;
+    width: 230px;
+    margin-block: 25px;
+
 }
