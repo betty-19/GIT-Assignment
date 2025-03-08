@@ -9,9 +9,9 @@
     padding: 0;
 } */
  .wrapper{
-    min-height: 100vh;  /* Ensure the wrapper covers the full viewport */
-    display: flex;
-    flex-direction: column;
+    min-height: 100vh;  
+    /* display: flex;
+    flex-direction: column; */
  }
 .bg-image{
     background-image: url("./assets/main.webp");
@@ -90,20 +90,34 @@
     display: grid;
     grid-template-columns: repeat(2,1fr);
     row-gap: 150px;
+    align-items: center;
     column-gap: 40px;
     margin-block: 10%;
+    /* display: flex;
+    flex-wrap: nowrap; 
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    padding-inline: 10%; */
+   
 
 }
+/* .rock-climbing-img, .extreme-offroad-img {
+    flex: 1; 
+} */
 .extreme-offroad-texts, .rock-climbing-texts{
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
     gap:25px;
+    /* flex: 1; */
 }
 .extreme-offroad-img img, .rock-climbing-img img{
-    width:100%;
-    height: 100%;
+    /* width:100%;
+    height: 100%; */
+    width: 100%;
+    height: auto;
     
 }
 .rock-climbing-img img, .img-one img{
@@ -215,8 +229,161 @@
 }
 .suggestion{
     display: flex;
+    flex-wrap: nowrap;
     justify-content: space-around;
     margin-bottom: 80px;
     margin-inline: 10%;
     
 }
+.suggestion h2{
+    font-weight: bold;
+}
+
+@media (min-width:770px) and (max-width:1480px){
+  
+    .suggestion{
+        flex-wrap: wrap;
+        text-align: center;
+        /* margin-inline: 0%; */
+        gap:30px;
+        margin-block: 100px;
+        /* margin-inline: 3%; */
+        /* background-color: #000;   */
+    }
+    .gallery {
+        grid-auto-rows: 250px; 
+        /* gap: 25px; 
+        margin:5%;
+        grid-template-columns:  1fr 1fr;
+        margin:5% 10%; */
+        /* background-color: #000; */
+       
+    }
+    .impressions{
+        
+        margin-block: 40px;
+        padding-inline: 11%;
+        
+    }
+    .bg-image{
+      
+        
+        height: 90vh;
+    
+    }
+    
+}
+@media(max-width:1200px){
+    .texts{
+       
+        margin-top:8%;
+        text-align: center;
+        gap:10px;
+    
+    }
+    .bg-image{
+      
+        
+        height: 50vh;
+    
+    }
+    .img-desc {
+        display: flex;
+        flex-direction: column;
+        gap: 50px; /* Add spacing between stacked elements */
+        padding-inline:20%;
+        /* background-color: #000; */
+    }
+    .extreme-offroad-texts {
+        order: 2; /* Moves the text below the image */
+    }
+
+    .extreme-offroad-img {
+        order: 1; /* Moves the image above the text */
+    }
+}
+
+@media (min-width:481px) and (max-width:769px){
+    .texts h1{
+       padding-inline:100px;
+        /* margin-top:8%;
+        text-align: center;
+        gap:10px; */
+        /* background-color: #000; */
+    
+    }
+    .img-one{
+        display: none;
+    }
+    .gallery {
+        grid-auto-rows: 200px; 
+        gap: 25px; 
+        margin:5%;
+        grid-template-columns:  1fr 1fr;
+        margin:5% 10%;
+        /* background-color: #000; */
+       
+    }
+    .suggestion{
+        flex-wrap: wrap;
+        text-align: center;
+        margin-inline: 15%;
+        gap: 30px;
+        /* background-color: #000;  */
+    }
+}
+@media (max-width:480px){
+    .texts h1{
+        padding-inline:100px;
+         /* margin-top:8%;
+         text-align: center;
+         gap:10px; */
+         /* background-color: #000; */
+     
+     }
+   
+    .img-one{
+        display: none;
+    }
+    .gallery{
+        
+        /* grid-template-columns:1fr;
+        grid-auto-rows: 350px; 
+        gap: 25px;  */
+        /* margin:5%; */
+        display: flex;
+        flex-direction: column;
+
+
+
+  /* background-color: #000; */
+        /* grid-template-columns: 1fr;
+        margin:5% 10%;
+      
+        row-gap: 10px;  */
+    }
+    .img-two,.img-three, .img-four {
+        flex:1;
+    }
+    .suggestion{
+        flex-wrap: wrap;
+        text-align: center;
+        margin-inline: 0%;
+        gap:30px;
+        margin-block: 100px;
+        /* margin-inline: 3%; */
+        /* background-color: #000;   */
+    }
+    .suggestion h2{
+        font-size:20px;
+    }
+    /* .wrapper{
+        background-color: #000;
+        width: 100%;
+    }
+    body{
+        background-color: red;
+    } */
+
+}
+
