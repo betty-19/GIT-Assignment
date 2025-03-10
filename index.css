@@ -15,7 +15,7 @@
  }
 .bg-image{
     background-image: url("./assets/main.webp");
-    /* background-position: center; */
+    background-position: center;
     background-size: cover;
     height: 100vh;
 
@@ -265,12 +265,12 @@
         padding-inline: 11%;
         
     }
-    .bg-image{
+    /* .bg-image{
       
         
         height: 90vh;
     
-    }
+    } */
     
 }
 @media(max-width:1200px){
@@ -281,12 +281,12 @@
         gap:10px;
     
     }
-    .bg-image{
+    /* .bg-image{
       
         
         height: 50vh;
     
-    }
+    } */
     .img-desc {
         display: flex;
         flex-direction: column;
