@@ -1,20 +1,19 @@
-console.log("header.js is connected!");
+// document.addEventListener("DOMContentLoaded", function () {
+//     const menu = document.getElementsByClassName(".menu");
+//     const navList = document.getElementsByTagName("ul");
 
-document.addEventListener("DOMContentLoaded", () => {
-    console.log("hello"); 
+//     if (!menu || !navList) {
+//         console.error("❌ Menu button or navigation list not found!");
+//         return;
+//     }
 
-    const menu = document.querySelector(".menu"); 
-    const navList = document.querySelector(".nav-list"); 
+//     menu.addEventListener("click", function () {
+//         console.log("✅ Menu button clicked!");
+//         navList.classList.toggle("show-menu");
+//     });
+// });
 
-    if (!menu || !navList) {
-        console.error("Menu or navList not found!");
-        return; 
-    }
-
-    menu.addEventListener("click", () => {
-        console.log("hi"); 
-        navList.classList.toggle("show-menu");
-    });
-});
-console.log("header.js is connected!");
-
+function showSidebar(){
+    const sidebar = document.querySelector('.sidebar');
+    sidebar.classList.toggle("show");
+}

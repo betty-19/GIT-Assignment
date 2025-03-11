@@ -57,6 +57,7 @@ ul #signup:hover,.texts button:hover{
     justify-content: center; */
     position:relative;
     display: none;
+    background-color: transparent;
 }
 
 .menu i{
@@ -71,49 +72,64 @@ ul #signup:hover,.texts button:hover{
 .bi {
     /* text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); */
 }
-
+.sidebar {
+    display: none !important; /* Force hiding the sidebar */
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start !important;
+    transition: transform 0.3s ease-in-out;
+    /* transform: translateX(100%);  */
+}
+.sidebar.show{
+    display: flex !important;
+    transform: translateX(0);
+}
+.sidebar .nav-item {
+    
+    /* background-color: red; */
+        width: 100%;
+    }
+    .sidebar .nav-item a{
+        width: 100%;
+        /* background-color: #000; */
+    }
 @media (max-width:1060px){
     .menu{
         display: block;
     }
-    .nav-list {
+   .nav ul{
         display: none;
-        flex-direction: column;
-        background-color: rgb(51, 51, 51);
-        position: fixed;
-        top: 0;
-        right: 0;
-        width: 250px;
-        height: 100vh; /* Full height */
-        padding-top: 20px;
-        z-index: 1000;
-        transition: transform 0.3s ease-in-out;
-        transform: translateX(100%); /* Hide off-screen */
+        /* position: absolute;
+        top: 80px;
+        right: 5%;
+        background-color: #fff;
+        width: 200px;
+        padding: 10px;
+        border-radius: 10px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); */
     }
-    .nav-list.show-menu{
-        display: flex;
-        transform: translateX(0);
-    }
-    .nav-list ul {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-        padding: 0;
-        margin: 0;
-    }
-    .nav-item {
-        text-align: center;
-        padding: 15px 0;
-    }
-    .nav-item a {
-        color: #fff;
-        font-size: 18px;
-        text-decoration: none;
+ /* 
+    
+    .nav ul.show-menu {
         display: block;
     }
-    .nav-item a:hover {
-        background-color: rgba(255, 255, 255, 0.1);
-    }
+
+   ul {
+        flex-direction: column;
+        gap: 10px;
+    } */
+    
+   
+
 }
 
 

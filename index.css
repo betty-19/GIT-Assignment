@@ -16,8 +16,9 @@
 .bg-image{
     background-image: url("./assets/main.webp");
     background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
+    /* height: 100vh; */
 
 }
 
@@ -26,7 +27,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top:15%;
+    padding-block: 7%;
     color:#fff;
     gap:30px;
     /* background-color: black; */
@@ -276,12 +277,12 @@
 @media(max-width:1200px){
     .texts{
        
-        margin-top:8%;
+        /* margin:15% auto  0% auto ; */
         text-align: center;
         gap:10px;
     
     }
-    /* .bg-image{
+    /* .bg-image{ 
       
         
         height: 50vh;

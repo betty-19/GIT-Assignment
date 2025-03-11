@@ -17,7 +17,16 @@
     <div class="logo">
         <img src="./assets/logo.webp" alt="">
     </div>
-    <div class="nav-list">
+    <!-- <div class="nav-list"> -->
+        <ul class="sidebar">
+            <li class="nav-item"><a href="./index.html"><b>Home</b></a></li>
+            <li class="nav-item"><a href="./offer.html">Offer</a></li>
+            <li class="nav-item"><a href="./gallery.html">Gallery</a></li>
+            <li class="nav-item"><a href="blog.html">Blog</a></li>
+            <li class="nav-item"><a href="about.html">About Us</a></li>
+            <li class="nav-item"><a href="contact.html">Contact</a></li>
+            <li class="nav-item" class="signup"><a id="signup" href="">Sign Up</a></li>
+        </ul>
         <ul>
             <li class="nav-item"><a href="./index.html"><b>Home</b></a></li>
             <li class="nav-item"><a href="./offer.html">Offer</a></li>
@@ -27,8 +36,10 @@
             <li class="nav-item"><a href="contact.html">Contact</a></li>
             <li class="nav-item" class="signup"><a id="signup" href="">Sign Up</a></li>
         </ul>
-    </div>
-    <div class="menu" role="button" tabindex="0"><i class="fa-solid fa-bars"></i></div>
+    <!-- </div> -->
+    <button class="menu" onClick=showSidebar()>
+        <i class="fa-solid fa-bars"></i>
+    </button>
 </div>
 <script src="./header.js"></script>
 </body>
